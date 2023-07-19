@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="templates/fontawesome-6/css/all.css">
+    <title>To Do List</title>
+</head>
+<body>
+
+    
+        <div class="container">
+            <div class="app-header">
+                <h2 id="app-heading">TODO LIST APP</h2>
+            </div>
+            <div class="add-task-field">
+                <h4>Add New Task </h4>
+                <span id="my-btn">+</span>
+            </div>
+            <div class="task-list-container">
+                <h3>Task List</h3>
+            </div>
+            <ul class="task-list" id="task-list">
+                <!--
+                    <li id="task">
+                    <div class="task-container">
+                        <p>Task One</p>
+                        <p>2023-07-11</p>
+                        <p>Describe task</p>
+                    </div>
+                    <div class="edit-delete-task">
+                        <i class="fa fa-edit edit-task"></i>
+                        <i class="fa fa-trash delete-task"></i>
+                    </div>
+                </li>
+                -->
+            </ul>
+        </div>
+
+    <!-- Trigger/Open The Modal -->
+    
+
+    <!-- The Modal -->
+    <form action="#" class="modal form" id="myModal">
+        <h3 class="form-header">Add New Task</h3>
+        <div class="input-field">
+            <label for="task-title">Task Title</label>
+            <input type="text" name="task-title" id="task-title">
+            <span class="error-msg" id="title-error-msg"></span>
+        </div>
+        <div class="input-field">
+            <label for="task-date">Due Date</label>
+            <input type="date" name="task-date" id="task-date">
+            <span class="error-msg" id="date-error-msg"></span>
+        </div>
+        <div class="input-field">
+            <label for="task-description">Description</label>
+            <textarea name="task-description" id="task-description" cols="30" rows="10"></textarea>
+            <span class="error-msg" id="description-error-msg"></span>
+        </div>
+        <div class="form-footer">
+            <div>
+                <button type="submit" id="add-task-btn" data-bs-dismiss="modal">Add</button>
+            </div>
+            <div>
+                <button type="button" id="delete-task-btn" class="close">Close</button>
+            </div>
+        </div>
+        
+    </form>
+<!--
+    <div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+    </div>
+</div>
+-->
+
+</body>
+<script src="script.js"></script>
+</html>
